@@ -45,7 +45,7 @@ def one_minute_average():
     print("publish" + str(average_one) + " to MOSQUITTO avg topic")
 
 
-schedule.every(10).seconds.do(one_minute_average)
+schedule.every(1).minute.do(one_minute_average)
 
 
 def five_minute_average():
